@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 
-@Api(value = "员工controller", tags = {"订单接口"})
+@Api(value = "员工controller", tags = {"员工接口"})
 @RestController
 @RequestMapping("/recycle/staff")
 public class StaffInfoController {
