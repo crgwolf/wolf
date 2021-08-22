@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="55591e3f-9188-4bac-b4a6-9a0e0af30f01" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Work\.m2\repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../java/apache-maven-3.5.4" />
+        <option name="userSettingsFile" value="D:\Work\.m2\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="jdkForImporter" value="11" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1wQcisVHlV5ltY2rdGkimX4cerX" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/recycle-server/src/main/java/com/waste/recycle/server/config" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.waste.recycle.server.controller" />
+      <recent name="com.waste.recycle.server.api.imp" />
+      <recent name="com.waste.recycle.wx.server.util" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Work\project\waste-java\recycle-server\src\main\java\com\waste\recycle\server\config" />
+      <recent name="D:\Work\project\waste-java\recycle-server\src\main\java\com\waste\recycle\server" />
+      <recent name="D:\Work\project\waste-java\recycle-server\src\main\resources" />
+      <recent name="D:\Work\project\waste\recycle-server\src\main\java\com\waste\recycle\server" />
+      <recent name="D:\Work\project\waste\wx-web\src\main\java\com\waste\recycle\wx\server\config" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Maven.recycle-server [mybatis-generator:generate]">
+    <configuration name="recycle-server [mybatis-generator:generate]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="mybatis-generator:generate" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/recycle-server" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eureka" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.waste.recycle.eureka.EurekaApplication" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../java/jdk-11.0.12" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.waste.recycle.gateway.GatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RecycleCommonApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="recycle-common" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.waste.recycle.common.RecycleCommonApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RecycleServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="recycle-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.waste.recycle.server.RecycleServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WxWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="wx-web" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.waste.recycle.wx.server.WxWebApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Maven.recycle-server [mybatis-generator:generate]" />
+      <item itemvalue="Spring Boot.EurekaApplication" />
+      <item itemvalue="Spring Boot.GatewayApplication" />
+      <item itemvalue="Spring Boot.RecycleServerApplication" />
+      <item itemvalue="Spring Boot.WxWebApplication" />
+      <item itemvalue="Spring Boot.RecycleCommonApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Maven.recycle-server [mybatis-generator:generate]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="55591e3f-9188-4bac-b4a6-9a0e0af30f01" name="Default Changelist" comment="" />
+      <created>1628394382360</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1628394382360</updated>
+      <workItem from="1628394385427" duration="7004000" />
+      <workItem from="1628402395138" duration="22104000" />
+      <workItem from="1628515971130" duration="23008000" />
+      <workItem from="1628695657461" duration="9000" />
+      <workItem from="1628695684462" duration="659000" />
+      <workItem from="1628724871170" duration="2440000" />
+      <workItem from="1628955012622" duration="14416000" />
+      <workItem from="1629031018817" duration="9851000" />
+      <workItem from="1629069823863" duration="2391000" />
+      <workItem from="1629072252077" duration="75000" />
+      <workItem from="1629072494128" duration="607000" />
+      <workItem from="1629112585374" duration="14101000" />
+      <workItem from="1629244144633" duration="938000" />
+      <workItem from="1629291484841" duration="9245000" />
+      <workItem from="1629415596889" duration="18005000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="233" y="0" key="#Inspections" timestamp="1628403876512">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="0" key="#Inspections/0.0.1280.680@0.0.1280.680" timestamp="1628403876512" />
+    <state x="233" y="0" key="#Project_Structure" timestamp="1628986640548">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1628986640548" />
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1629011102420">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1629011102420" />
+    <state x="446" y="90" width="574" height="580" key="#com.intellij.ide.util.MemberChooser" timestamp="1629625760209">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="446" y="90" width="574" height="580" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1629625760209" />
+    <state x="371" y="124" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1628403553389">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="371" y="124" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1280.680@0.0.1280.680" timestamp="1628403553389" />
+    <state x="383" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1629604560152">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="383" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680@0.0.1280.680" timestamp="1629604560152" />
+    <state x="563" y="64" key="FileChooserDialogImpl" timestamp="1629415740323">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="563" y="64" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1629415740323" />
+    <state width="1238" height="72" key="GridCell.Tab.0.bottom" timestamp="1629625813746">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1238" height="72" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1629625813746" />
+    <state width="1238" height="72" key="GridCell.Tab.0.center" timestamp="1629625813746">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1238" height="72" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1629625813746" />
+    <state width="1238" height="72" key="GridCell.Tab.0.left" timestamp="1629625813746">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1238" height="72" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1629625813746" />
+    <state width="1238" height="72" key="GridCell.Tab.0.right" timestamp="1629625813746">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1238" height="72" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1629625813746" />
+    <state width="1238" height="2" key="GridCell.Tab.1.bottom" timestamp="1629211310092">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1238" height="2" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1629211310092" />
+    <state width="1238" height="2" key="GridCell.Tab.1.center" timestamp="1629211310091">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1238" height="2" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1629211310091" />
+    <state width="1238" height="2" key="GridCell.Tab.1.left" timestamp="1629211310091">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1238" height="2" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1629211310091" />
+    <state width="1238" height="2" key="GridCell.Tab.1.right" timestamp="1629211310091">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1238" height="2" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1629211310091" />
+    <state width="1238" height="46" key="GridCell.Tab.2.bottom" timestamp="1629040993536">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1238" height="46" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1629040993536" />
+    <state width="1238" height="46" key="GridCell.Tab.2.center" timestamp="1629040993535">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1238" height="46" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1629040993535" />
+    <state width="1238" height="46" key="GridCell.Tab.2.left" timestamp="1629040993535">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1238" height="46" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1629040993535" />
+    <state width="1238" height="46" key="GridCell.Tab.2.right" timestamp="1629040993535">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1238" height="46" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1629040993535" />
+    <state x="171" y="0" key="Maven.ArtifactSearchDialog" timestamp="1629008994630">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="171" y="0" key="Maven.ArtifactSearchDialog/0.0.1280.680@0.0.1280.680" timestamp="1629008994630" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1628955704684">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1628955704684" />
+    <state x="324" y="204" key="com.intellij.ide.util.TipDialog" timestamp="1629244150146">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="324" y="204" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1629244150146" />
+    <state x="0" y="0" key="new project wizard" timestamp="1628432730230">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="0" y="0" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1628432730230" />
+    <state x="298" y="151" key="run.anything.popup" timestamp="1629124922111">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="298" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1629124922111" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1629295839054">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1629295839054" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/recycle-server/src/main/java/com/waste/recycle/server/service/impl/OrderInfoServiceImpl.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

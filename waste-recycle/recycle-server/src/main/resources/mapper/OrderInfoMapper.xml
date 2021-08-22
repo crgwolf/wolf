@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.waste.recycle.server.mapper.OrderInfoMapper" >
+  <resultMap id="BaseResultMap" type="com.waste.recycle.server.po.OrderInfo" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="user_id" property="userId" jdbcType="BIGINT" />
+    <result column="prepare_header_id" property="prepareHeaderId" jdbcType="BIGINT" />
+    <result column="actual_handler_id" property="actualHandlerId" jdbcType="BIGINT" />
+    <result column="order_state" property="orderState" jdbcType="TINYINT" />
+    <result column="order_type" property="orderType" jdbcType="VARCHAR" />
+    <result column="weight" property="weight" jdbcType="VARCHAR" />
+    <result column="order_person" property="orderPerson" jdbcType="VARCHAR" />
+    <result column="order_phone" property="orderPhone" jdbcType="VARCHAR" />
+    <result column="longitude" property="longitude" jdbcType="DECIMAL" />
+    <result column="latitude" property="latitude" jdbcType="DECIMAL" />
+    <result column="province" property="province" jdbcType="VARCHAR" />
+    <result column="city" property="city" jdbcType="VARCHAR" />
+    <result column="country" property="country" jdbcType="VARCHAR" />
+    <result column="town" property="town" jdbcType="VARCHAR" />
+    <result column="detailed_address" property="detailedAddress" jdbcType="VARCHAR" />
+    <result column="visit_time" property="visitTime" jdbcType="TIMESTAMP" />
+    <result column="message" property="message" jdbcType="VARCHAR" />
+    <result column="created_time" property="createdTime" jdbcType="TIMESTAMP" />
+    <result column="updated_time" property="updatedTime" jdbcType="TIMESTAMP" />
+    <result column="is_enable" property="isEnable" jdbcType="TINYINT" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, user_id, prepare_header_id, actual_handler_id, order_state, order_type, weight, 
+    order_person, order_phone, longitude, latitude, province, city, country, town, detailed_address, 
+    visit_time, message, created_time, updated_time, is_enable
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from order_info
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from order_info
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.waste.recycle.server.po.OrderInfo" >
+    insert into order_info (id, user_id, prepare_header_id, 
+      actual_handler_id, order_state, order_type, 
+      weight, order_person, order_phone, 
+      longitude, latitude, province, 
+      city, country, town, 
+      detailed_address, visit_time, message, 
+      created_time, updated_time, is_enable
+      )
+    values (#{id,jdbcType=BIGINT}, #{userId,jdbcType=BIGINT}, #{prepareHeaderId,jdbcType=BIGINT},
+      #{actualHandlerId,jdbcType=BIGINT}, #{orderState,jdbcType=TINYINT}, #{orderType,jdbcType=VARCHAR},
+      #{weight,jdbcType=VARCHAR}, #{orderPerson,jdbcType=VARCHAR}, #{orderPhone,jdbcType=VARCHAR}, 
+      #{longitude,jdbcType=DECIMAL}, #{latitude,jdbcType=DECIMAL}, #{province,jdbcType=VARCHAR}, 
+      #{city,jdbcType=VARCHAR}, #{country,jdbcType=VARCHAR}, #{town,jdbcType=VARCHAR}, 
+      #{detailedAddress,jdbcType=VARCHAR}, #{visitTime,jdbcType=TIMESTAMP}, #{message,jdbcType=VARCHAR}, 
+      #{createdTime,jdbcType=TIMESTAMP}, #{updatedTime,jdbcType=TIMESTAMP}, #{isEnable,jdbcType=TINYINT}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.waste.recycle.server.po.OrderInfo" >
+    insert into order_info
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="userId != null" >
+        user_id,
+      </if>
+      <if test="prepareHeaderId != null" >
+        prepare_header_id,
+      </if>
+      <if test="actualHandlerId != null" >
+        actual_handler_id,
+      </if>
+      <if test="orderState != null" >
+        order_state,
+      </if>
+      <if test="orderType != null" >
+        order_type,
+      </if>
+      <if test="weight != null" >
+        weight,
+      </if>
+      <if test="orderPerson != null" >
+        order_person,
+      </if>
+      <if test="orderPhone != null" >
+        order_phone,
+      </if>
+      <if test="longitude != null" >
+        longitude,
+      </if>
+      <if test="latitude != null" >
+        latitude,
+      </if>
+      <if test="province != null" >
+        province,
+      </if>
+      <if test="city != null" >
+        city,
+      </if>
+      <if test="country != null" >
+        country,
+      </if>
+      <if test="town != null" >
+        town,
+      </if>
+      <if test="detailedAddress != null" >
+        detailed_address,
+      </if>
+      <if test="visitTime != null" >
+        visit_time,
+      </if>
+      <if test="message != null" >
+        message,
+      </if>
+      <if test="createdTime != null" >
+        created_time,
+      </if>
+      <if test="updatedTime != null" >
+        updated_time,
+      </if>
+      <if test="isEnable != null" >
+        is_enable,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="userId != null" >
+        #{userId,jdbcType=BIGINT},
+      </if>
+      <if test="prepareHeaderId != null" >
+        #{prepareHeaderId,jdbcType=BIGINT},
+      </if>
+      <if test="actualHandlerId != null" >
+        #{actualHandlerId,jdbcType=BIGINT},
+      </if>
+      <if test="orderState != null" >
+        #{orderState,jdbcType=TINYINT},
+      </if>
+      <if test="orderType != null" >
+        #{orderType,jdbcType=VARCHAR},
+      </if>
+      <if test="weight != null" >
+        #{weight,jdbcType=VARCHAR},
+      </if>
+      <if test="orderPerson != null" >
+        #{orderPerson,jdbcType=VARCHAR},
+      </if>
+      <if test="orderPhone != null" >
+        #{orderPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="longitude != null" >
+        #{longitude,jdbcType=DECIMAL},
+      </if>
+      <if test="latitude != null" >
+        #{latitude,jdbcType=DECIMAL},
+      </if>
+      <if test="province != null" >
+        #{province,jdbcType=VARCHAR},
+      </if>
+      <if test="city != null" >
+        #{city,jdbcType=VARCHAR},
+      </if>
+      <if test="country != null" >
+        #{country,jdbcType=VARCHAR},
+      </if>
+      <if test="town != null" >
+        #{town,jdbcType=VARCHAR},
+      </if>
+      <if test="detailedAddress != null" >
+        #{detailedAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="visitTime != null" >
+        #{visitTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="message != null" >
+        #{message,jdbcType=VARCHAR},
+      </if>
+      <if test="createdTime != null" >
+        #{createdTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updatedTime != null" >
+        #{updatedTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isEnable != null" >
+        #{isEnable,jdbcType=TINYINT},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.waste.recycle.server.po.OrderInfo" >
+    update order_info
+    <set >
+      <if test="userId != null" >
+        user_id = #{userId,jdbcType=BIGINT},
+      </if>
+      <if test="prepareHeaderId != null" >
+        prepare_header_id = #{prepareHeaderId,jdbcType=BIGINT},
+      </if>
+      <if test="actualHandlerId != null" >
+        actual_handler_id = #{actualHandlerId,jdbcType=BIGINT},
+      </if>
+      <if test="orderState != null" >
+        order_state = #{orderState,jdbcType=TINYINT},
+      </if>
+      <if test="orderType != null" >
+        order_type = #{orderType,jdbcType=VARCHAR},
+      </if>
+      <if test="weight != null" >
+        weight = #{weight,jdbcType=VARCHAR},
+      </if>
+      <if test="orderPerson != null" >
+        order_person = #{orderPerson,jdbcType=VARCHAR},
+      </if>
+      <if test="orderPhone != null" >
+        order_phone = #{orderPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="longitude != null" >
+        longitude = #{longitude,jdbcType=DECIMAL},
+      </if>
+      <if test="latitude != null" >
+        latitude = #{latitude,jdbcType=DECIMAL},
+      </if>
+      <if test="province != null" >
+        province = #{province,jdbcType=VARCHAR},
+      </if>
+      <if test="city != null" >
+        city = #{city,jdbcType=VARCHAR},
+      </if>
+      <if test="country != null" >
+        country = #{country,jdbcType=VARCHAR},
+      </if>
+      <if test="town != null" >
+        town = #{town,jdbcType=VARCHAR},
+      </if>
+      <if test="detailedAddress != null" >
+        detailed_address = #{detailedAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="visitTime != null" >
+        visit_time = #{visitTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="message != null" >
+        message = #{message,jdbcType=VARCHAR},
+      </if>
+      <if test="createdTime != null" >
+        created_time = #{createdTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updatedTime != null" >
+        updated_time = #{updatedTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isEnable != null" >
+        is_enable = #{isEnable,jdbcType=TINYINT},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.waste.recycle.server.po.OrderInfo" >
+    update order_info
+    set user_id = #{userId,jdbcType=BIGINT},
+      prepare_header_id = #{prepareHeaderId,jdbcType=BIGINT},
+      actual_handler_id = #{actualHandlerId,jdbcType=BIGINT},
+      order_state = #{orderState,jdbcType=TINYINT},
+      order_type = #{orderType,jdbcType=VARCHAR},
+      weight = #{weight,jdbcType=VARCHAR},
+      order_person = #{orderPerson,jdbcType=VARCHAR},
+      order_phone = #{orderPhone,jdbcType=VARCHAR},
+      longitude = #{longitude,jdbcType=DECIMAL},
+      latitude = #{latitude,jdbcType=DECIMAL},
+      province = #{province,jdbcType=VARCHAR},
+      city = #{city,jdbcType=VARCHAR},
+      country = #{country,jdbcType=VARCHAR},
+      town = #{town,jdbcType=VARCHAR},
+      detailed_address = #{detailedAddress,jdbcType=VARCHAR},
+      visit_time = #{visitTime,jdbcType=TIMESTAMP},
+      message = #{message,jdbcType=VARCHAR},
+      created_time = #{createdTime,jdbcType=TIMESTAMP},
+      updated_time = #{updatedTime,jdbcType=TIMESTAMP},
+      is_enable = #{isEnable,jdbcType=TINYINT}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+
+  <update id="updateEnableByPrimaryKey" parameterType="java.lang.Long" >
+    update order_info
+    set
+      updated_time = Current_Timestamp,
+      is_enable = 0
+    set
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+
+  <select id="selectByParam" resultMap="BaseResultMap" parameterType="com.waste.recycle.server.vo.OrderRequestVO" >
+    select
+    <include refid="Base_Column_List" />
+    from order_info o left join user_info u on o.user_id=u.id
+    where 1=1
+    <if test="request.openid != null and request.openid !=''">
+      and u.openid = #{request.openid,jdbcType=VARCHAR}
+    </if>
+    <if test="request.province != null request.province != ''">
+      and o.province = #{request.province,jdbcType=VARCHAR}
+    </if>
+    <if test="request.city != null and request.city != ''">
+      and o.city = #{request.city,jdbcType=VARCHAR}
+    </if>
+    <if test="request.country != null and request.country != ''">
+      and o.country = #{request.country,jdbcType=VARCHAR}
+    </if>
+    <if test="request.town != null and request.town != ''">
+      and o.town = #{request.town,jdbcType=VARCHAR}
+    </if>
+    <if test="request.orderState != null and request.orderState != ''">
+      and o.order_state = #{request.orderState,jdbcType=VARCHAR}
+    </if>
+    and is_enable= 1
+    order by o.id desc
+  </select>
+
+  <select id="getPageList" resultMap="BaseResultMap" parameterType="com.waste.recycle.server.vo.OrderRequestVO">
+    select
+    <include refid="Base_Column_List"/>
+    from order_info o left join user_info u on o.user_id=u.id
+    where 1=1
+    <if test="request.openid != null and request.openid !=''">
+      and u.openid = #{request.openid,jdbcType=VARCHAR}
+    </if>
+    <if test="request.province != null request.province != ''">
+      and o.province = #{request.province,jdbcType=VARCHAR}
+    </if>
+    <if test="request.city != null and request.city != ''">
+      and o.city = #{request.city,jdbcType=VARCHAR}
+    </if>
+    <if test="request.country != null and request.country != ''">
+      and o.country = #{request.country,jdbcType=VARCHAR}
+    </if>
+    <if test="request.town != null and request.town != ''">
+      and o.town = #{request.town,jdbcType=VARCHAR}
+    </if>
+    <if test="request.orderState != null and request.orderState != ''">
+      and o.order_state = #{request.orderState,jdbcType=VARCHAR}
+    </if>
+    order by o.id desc
+  </select>
+
+</mapper>

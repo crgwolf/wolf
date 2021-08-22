@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC
+        "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+    <context id="context" targetRuntime="MyBatis3">
+        <commentGenerator>
+            <property name="suppressAllComments" value="true"/>
+            <property name="suppressDate" value="true"/>
+        </commentGenerator>
+        <!-- 数据库的相关配置 -->
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://192.168.10.101:3306/recycle_db?characterEncoding=utf-8"
+                        userId="root" password="sa"/>
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+        <!-- 实体类生成的位置 -->
+        <javaModelGenerator targetPackage="com.waste.recycle.server.po" targetProject="src/main/java">
+            <property name="enableSubPackages" value="false"/>
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+        <!-- *Mapper.xml 文件的位置 -->
+        <sqlMapGenerator targetPackage="mapper" targetProject=".\src\main\resources">
+            <property name="enableSubPackages" value="false"/>
+        </sqlMapGenerator>
+        <!-- Mapper 接口文件的位置 -->
+        <javaClientGenerator targetPackage="com.waste.recycle.server.mapper" targetProject="src/main/java"
+                             type="XMLMAPPER">
+            <property name="enableSubPackages" value="false"/>
+        </javaClientGenerator>
+        <!-- 相关表的配置 -->
+        <!--column填写数据库列名,property填写生成的java中的字段名,javaType填写java中的字段类型-->
+
+<!--        <table tableName="order_info" domainObjectName="OrderInfo"-->
+<!--               enableCountByExample="false" enableDeleteByExample="false"-->
+<!--               enableSelectByExample="false" enableUpdateByExample="false">-->
+<!--            <columnOverride column="id" javaType="java.lang.Long"/>-->
+<!--            <columnOverride column="user_id" javaType="java.lang.Long"/>-->
+<!--            <columnOverride column="prepare_header_id" javaType="java.lang.Long"/>-->
+<!--            <columnOverride column="actual_handler_id" javaType="java.lang.Long"/>-->
+<!--            <columnOverride column="order_state" javaType="java.lang.Integer"/>-->
+<!--            <columnOverride column="is_enable" javaType="java.lang.Integer"/>-->
+<!--            <columnOverride column="is_enable" property="isEnable"/>-->
+<!--        </table>-->
+
+<!--            <table tableName="staff_info" domainObjectName="StaffInfo"-->
+<!--                   enableCountByExample="false" enableDeleteByExample="false"-->
+<!--                   enableSelectByExample="false" enableUpdateByExample="false">-->
+<!--                <columnOverride column="id" javaType="java.lang.Long"/>-->
+<!--                <columnOverride column="is_enable" javaType="java.lang.Integer"/>-->
+<!--                <columnOverride column="is_enable" property="isEnable"/>-->
+<!--            </table>-->
+
+        <table tableName="user_info" domainObjectName="UserInfo"
+               enableCountByExample="false" enableDeleteByExample="false"
+               enableSelectByExample="false" enableUpdateByExample="false">
+            <columnOverride column="id" javaType="java.lang.Long"/>
+            <columnOverride column="is_enable" javaType="java.lang.Integer"/>
+            <columnOverride column="is_enable" property="isEnable"/>
+        </table>
+
+    </context>
+</generatorConfiguration>
